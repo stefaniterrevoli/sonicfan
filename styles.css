@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Raleway:wght@500&display=swap');
+/*reset*/
+* {
+    margin: 0%;
+    padding:0%;
+    box-sizing: border-box;
+}
+/*FONDO*/
+.imagen-fondo{
+    height: 100vh;
+    background-image: url(/IMAGEN/fondo\ sonic\ sencillo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover ;
+   
+/*ESTILOS LOGO*/    
+}
+.nombrelogo{
+    padding: 4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 200%;
+    display: flex;
+    justify-content: left;
+    padding-bottom: 0%; 
+    color: beige;
+}
+/*ESTILOS SITIOS DE NAVEGACION*/
+
+nav.menu-nav{
+    list-style-type: none;
+    text-align: center;
+    font-size: 200%;
+    gap: 6rem;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(13, 129, 150);
+    border-radius: 20px;
+    margin: 20px;
+}
+
+/*URL ESTILO*/
+a.inicio{
+    color: rgb(255, 254, 255);
+    text-decoration: none;
+}
+
+a.historia{
+    color: rgb(255, 254, 255);
+    text-decoration: none;
+}
+a.videojuegos{
+    color: rgb(255, 254, 255);
+    text-decoration: none;
+}
+a.playlist{
+    color: rgb(255, 254, 255);
+    text-decoration: none;
+}
+a.imagenes{
+    color: rgb(255, 254, 255);
+    text-decoration: none;
+}
+/*URL ESTILOS/*
+
+
+/*TAMAÑO Y UBICACION DE LOGO*/
+.soniclogomodif{
+    width: 200px;
+    margin: 2%;
+    padding: 0%;
+}
+.soniclogo {
+    
+    width: 100%;
+
+}
+/*TAMAÑO Y UBICACION DE LOGO*/
+
+/*NOTICIAS*/
+.card{
+    width: 400px;
+    background-color: rgb(8, 12, 71);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 50px 10px 50px;
+    display: inline-block;
+    text-align: center;
+}
+
+.card_img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.titulo-pag{
+    color: rgb(146, 233, 228);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 400%;
+}
+
+/*TEXTO DE NOTCIAS*/
+p.lettercolor{
+    font-family: 'Montserrat', sans-serif;
+    color: azure;
+    text-align: justify;
+}
+/*NOTICIAS +/
+
