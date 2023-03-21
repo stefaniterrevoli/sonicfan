@@ -49,6 +49,17 @@ display: block;
 }
 /*ESTILOS SITIOS DE NAVEGACION*/
 
+/*footer*/
+
+.footer{
+
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #194e5c;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
 
 
 /*TAMAÑO Y UBICACION DE LOGO-NOMBRE*/
@@ -128,7 +139,6 @@ font-size: 200%;
     
 } 
 
-
 .character-name div{
     font-family: 'Montserrat', sans-serif;
     color: rgb(235, 242, 244);
@@ -139,14 +149,14 @@ font-size: 200%;
 
 .personajes-distribution {
     display: flex;
-    display: grid;
-    grid-template-columns: 2fr 2fr ;
-    grid-template-areas: 
+    /*
     "sonic tails"
     "nucles amy"
     "shadow eggman ";
+    */
     color:aliceblue;
     width: 100%;
+    height: 50%;
 
 }
 
@@ -157,28 +167,35 @@ font-size: 200%;
 
 }
 .sonic{
-    grid-area: sonic
-
+    grid-area: sonic;
+    background-color: rgba(0, 0, 0, 0.437);
 }
 
 .tails{
     grid-area: tails;
+    background-color: #194e5c61;
+
 }
 
 .nucles{
  grid-area: nucles;
+ background-color: rgba(0, 0, 0, 0.437);
+
 }
 
 .amy{
     grid-area: amy;
+    background-color: #194e5c61;
 }
 
 .shadow{
     grid-area: shadow;
+    background-color: rgba(0, 0, 0, 0.437);
 }
 
 .eggman{
-grid-area: eggman;
+    grid-area: eggman;
+    background-color: #194e5c61;
 }
 
 .descripcion{ 
@@ -190,7 +207,7 @@ grid-area: eggman;
     margin: 10px 50px 10px 50px;
     border-radius: 5px;
     width:400px;
-
+    
 }
 
 /*PERSONAJES*/
@@ -198,17 +215,17 @@ grid-area: eggman;
 /*VIDEOJUEGOS*/
 .card{
     display: grid;
+    flex: content;
     width: 400px;
     border-radius: 10px;
-    padding: 20px;
+    padding:2rem;
     margin: 10px 50px 10px 50px;
     display: inline-block;
     text-align: center;
 }
 
-.card_img{
+.card-img{
     width: 100%;
-   
 }
 
 .titulo-pag{
@@ -287,6 +304,8 @@ p.lettercolor{
 }
 
 .form{
+    display: flex;
+    justify-content: center;
     width: 100%;
     max-width: 650px;
     background:#5A96A7 ;
