@@ -6,81 +6,199 @@
     padding:0%;
     box-sizing: border-box;
 }
+
+
 /*FONDO*/
 .imagen-fondo{
     height: 100vh;
-    background-image: url(/IMAGEN/fondo\ sonic\ sencillo.jpg);
+    background-image: url(/IMAGEN/28000-sonic.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover ;
-   
-/*ESTILOS LOGO*/    
-}
-.nombrelogo{
-    padding: 4rem;
+   }
+/*FONDO*/
+
+/*ESTILOS SITIOS DE NAVEGACION*/
+.menu-nav {
+    padding: 0%;
+    width: 100%;;  
+    margin: auto; 
     font-family: 'Montserrat', sans-serif;
-    font-size: 200%;
-    display: flex;
-    justify-content: left;
-    padding-bottom: 0%; 
-    color: beige;
+    font-size: 150%; 
+    text-align: center;
+}
+
+.menu-nav li a{
+text-decoration: none;
+text-decoration-style: none;
+color: aliceblue;
+padding: 30px;
+display: block;
+
+}
+   
+.menu-nav li{
+    display: inline-block;
+    text-align: center; 
+}
+
+.menu-nav li a:hover{
+    background-color: rgba(240, 224, 52, 0.637);
+    transition: 1s;
+    transform: translate(0px, -4px);
 }
 /*ESTILOS SITIOS DE NAVEGACION*/
 
-nav.menu-nav{
-    list-style-type: none;
-    text-align: center;
-    font-size: 200%;
-    gap: 6rem;
-    letter-spacing: 2px;
+
+
+/*TAMAÑO Y UBICACION DE LOGO-NOMBRE*/
+
+.logo-titulo{ 
+display: flex;
+list-style-type: none;
+text-align: center;
+font-size: 200%;
+}
+
+
+.nombrelogo{
+    display: flex;
+    padding: 3rem;
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(13, 129, 150);
-    border-radius: 20px;
-    margin: 20px;
+    font-size: 140%;
+    justify-content: left;
+    padding-bottom: 0%; 
+    color: rgb(229, 229, 162);
 }
 
-/*URL ESTILO*/
-a.inicio{
-    color: rgb(255, 254, 255);
-    text-decoration: none;
-}
-
-a.historia{
-    color: rgb(255, 254, 255);
-    text-decoration: none;
-}
-a.videojuegos{
-    color: rgb(255, 254, 255);
-    text-decoration: none;
-}
-a.playlist{
-    color: rgb(255, 254, 255);
-    text-decoration: none;
-}
-a.imagenes{
-    color: rgb(255, 254, 255);
-    text-decoration: none;
-}
-/*URL ESTILOS/*
-
-
-/*TAMAÑO Y UBICACION DE LOGO*/
 .soniclogomodif{
+   display: flex;
     width: 200px;
     margin: 2%;
     padding: 0%;
 }
-.soniclogo {
+
+.soniclogo { 
+    display:flex; 
+    height: 150px;
+
+}
+/*TAMAÑO Y UBICACION DE LOGO-NOMBRE*/
+
+
+
+/*INICIO*/
+.classic{
+    width: 100%;
+    display: flex;
+    padding-left: 8rem ;
+    padding-right: 10rem;
+    gap:2rem;
+    /*display: block;*/
+}
+
+
+.title{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(62, 67, 197);
+    font-size: 500%;
+    text-align: center ;
+    gap: 4rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.who{
+    font-family:  'Montserrat', sans-serif;
+    font-size: 2rem ;
+    font-weight: 300;
+    color: rgb(251, 233, 154);
+    text-align: justify;
     
+}
+/*INICIO*/
+
+/*PERSONAJES*/
+
+.personajes{
+    color: rgb(212, 199, 110);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 400%;
+    
+} 
+
+
+.character-name div{
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(235, 242, 244);
+    font-size: 110%;
+    text-align: center ;
+}
+
+
+.personajes-distribution {
+    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 2fr ;
+    grid-template-areas: 
+    "sonic tails"
+    "nucles amy"
+    "shadow eggman ";
+    color:aliceblue;
     width: 100%;
 
 }
-/*TAMAÑO Y UBICACION DE LOGO*/
 
-/*NOTICIAS*/
+.personajes-distribution div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.sonic{
+    grid-area: sonic
+
+}
+
+.tails{
+    grid-area: tails;
+}
+
+.nucles{
+ grid-area: nucles;
+}
+
+.amy{
+    grid-area: amy;
+}
+
+.shadow{
+    grid-area: shadow;
+}
+
+.eggman{
+grid-area: eggman;
+}
+
+.descripcion{ 
+    font-family: 'Montserrat', sans-serif;
+    color: aliceblue;
+    text-align: justify;
+    background-color: rgba(141, 175, 250, 0.479);
+    padding: 20px;
+    margin: 10px 50px 10px 50px;
+    border-radius: 5px;
+    width:400px;
+
+}
+
+/*PERSONAJES*/
+
+/*VIDEOJUEGOS*/
 .card{
+    display: grid;
     width: 400px;
-    background-color: rgb(8, 12, 71);
     border-radius: 10px;
     padding: 20px;
     margin: 10px 50px 10px 50px;
@@ -90,7 +208,7 @@ a.imagenes{
 
 .card_img{
     width: 100%;
-    border-radius: 10px;
+   
 }
 
 .titulo-pag{
@@ -100,11 +218,134 @@ a.imagenes{
     font-size: 400%;
 }
 
-/*TEXTO DE NOTCIAS*/
 p.lettercolor{
     font-family: 'Montserrat', sans-serif;
     color: azure;
     text-align: justify;
 }
-/*NOTICIAS +/
+/*VIDEOJUEGOS*/
 
+
+/*CORTOS ANIMADOS*/
+.card-video{
+    display: grid;
+    width: 400px;
+    border-radius: 10px;
+    padding: 6rem;;
+    margin: 10px 50px 10px 50px;
+    display: inline-block;
+    text-align: center;  
+}
+
+
+.card-playlist{
+    padding-left: 6rem;
+    display: grid;
+    display: inline-block;
+    flex: content;
+    text-align: center;
+    width: 600px;
+    border-radius: 10px; 
+    justify-content: center;
+}
+
+.titulo-pag{
+    color: rgb(146, 233, 228);
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 400%;
+}
+/*CORTOS ANIMADOS*/
+
+/*seccion*/
+
+.big-cont{
+    display: flex;
+    margin: 10px 50px 10px 50px;
+    
+
+}
+.contain{
+    text-align: left;
+    padding-left: 4rem ;
+    
+
+}
+
+.title-sec{
+
+    font-family: 'Montserrat', sans-serif; 
+    color: rgb(212, 199, 110);
+    font-size: 40px;
+}
+
+.text{
+    font-family: 'Montserrat', sans-serif;
+    color: azure;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.form{
+    width: 100%;
+    max-width: 650px;
+    background:#5A96A7 ;
+    padding: 28px;
+    margin: 0 28px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: azure;
+}
+.form-g{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.form-g label{
+    width: 95%;
+    color: rgb(13, 49, 73);
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.form-g input{
+    height: 40px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    padding: 0 10px;
+    border-color: aliceblue;
+}
+
+.form-control{
+ background-color: aliceblue;
+ font-family: 'Montserrat', sans-serif;
+ border-radius: 10px;
+}
+
+input, textarea{
+    border: 0;
+    outline: none;
+
+    width: 280px;
+}
+.button{
+    background-color:#D1F5BE;
+    margin-top: 40px;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    border-radius: 10PX;
+    border-color: #d1f5be;
+    height: 40px;
+    color: rgb(27, 80, 126);
+    font-size: 20px ;
+    font-weight: 200;
+    outline: none;
+}
+@media (min-width: 992px){
+
+
+}
